@@ -1,0 +1,54 @@
+﻿<Window x:Class="project.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="300">
+    <Canvas>
+        <TextBlock Canvas.Left="10"
+                   Canvas.Top="35"
+                   Height="30"
+                   Width="272"
+                   FontSize="19"
+                   FontFamily="Comic Sans MS"
+                   TextAlignment="Center">GayClub Login</TextBlock>
+        <TextBlock Canvas.Left="10"
+                   Canvas.Top="106"
+                   Height="22"
+                   Width="45"
+                   FontSize="15"
+                   TextAlignment="Center">Login:</TextBlock>
+        <TextBox Name="Login_"
+                 Canvas.Left="80"
+                 Canvas.Top="106"
+                 Height="22"
+                 Width="202"></TextBox>
+        <TextBlock Canvas.Left="10"
+                   Canvas.Top="167"
+                   FontSize="15"
+                   Height="22">Password:</TextBlock>
+        <TextBox Name="Password"
+                 Canvas.Left="80" 
+                 Canvas.Top="167"
+                 Height="22"
+                 Width="202"></TextBox>
+        <Button Name="LoginButton"
+                Click="LoginButton_Click"
+                Height="51"
+                Width="272"
+                Canvas.Left="10"
+                Canvas.Top="237"
+                FontSize="16">Welcome to the club, buddy)</Button>
+        <TextBlock Name="Join"
+                   PreviewMouseDown="Join_PreviewMouseDown"
+                   Canvas.Left="10"
+                   Canvas.Top="302"
+                   Width="272"
+                   Height="20"
+                   TextAlignment="Center"
+                   TextDecorations="Underline" 
+                   Foreground="Blue">Join the GayClub now</TextBlock>
+    </Canvas>
+</Window>
